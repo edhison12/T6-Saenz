@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A simple shopping cart app in React",
   "main": "index.js",
+  "homepage": "https://edhison12.github.io/T6-saenz",
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.3",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.88.2",
