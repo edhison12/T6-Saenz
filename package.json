@@ -5,10 +5,10 @@
   "main": "index.js",
   "homepage": "https://edhison12.github.io/T6-saenz",
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+   "build": "webpack",
+  "start": "webpack serve --open",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
