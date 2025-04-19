@@ -1,0 +1,24 @@
+name: Build and Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Clean workspace
+        run: |
+          rm -rf ./node_modules
+          rm -rf ./dist
+      
+      - name: Install dependencies
+        run: bundle install
+      
+      - name: Build site
+        run: bundle exec jekyll build
